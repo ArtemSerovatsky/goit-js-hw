@@ -1,26 +1,26 @@
 "use strict"
 
-let total = 1000;
-let ordered = 700;
-const notEnough = "на складе недостаточно товаров";
-const order = "Заказ оформлен, с Вами свяжется менеджер";
+let total = 100;
+let ordered = 130;
 
 if (ordered > total) {
-    console.log(notEnough)
+    console.log('На складе недостаточно товаров!');
+} else {
+    console.log('Заказ оформлен, с Вами свяжется менеджер')
 }
 
-if (total>=ordered) {
-    console.log(order)
-}
-
-ordered = 1500;
+ordered = 20;
 
 if (ordered > total) {
-    console.log(notEnough)
+    console.log('На складе недостаточно товаров!');
+} else {
+    console.log('Заказ оформлен, с Вами свяжется менеджер')
 }
 
-if (total>=ordered) {
-    console.log(order)
+ordered = 80;
+
+if (ordered > total) {
+    console.log('На складе недостаточно товаров!');
+} else {
+    console.log('Заказ оформлен, с Вами свяжется менеджер')
 }
-
-

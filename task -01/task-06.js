@@ -1,18 +1,17 @@
 "use strict"
 
+let input;
 let total=0;
 
 do {
-    let input=prompt("Введите число");
+    input=prompt("Введите число");
 
-if (input === null) {
-    console.log ("Отменено пользователем");
-    break; 
-
-    } else {
-        total=total+Number(input);
+    if (Number.isNaN(Number(input))) {
+        alert("Это не число, попробуйте еще раз");
+        break; 
     }
-        } while (true);
+    total += +input
+    } while (input !== null);
 
 
 console.log ("всего", total)

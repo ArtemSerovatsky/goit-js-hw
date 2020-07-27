@@ -1,35 +1,36 @@
 "use strict"
 
-let cost;
+const chinaPrice = 100;
+const chiliPrice = 250;
+const australiaPrice = 170;
+const indiaPrice = 80;
+const jamaikaPrice = 120;
 
-let country = prompt("в какую страну необходима доставка?");
+const country = prompt("в какую страну необходима доставка?");
 
+if (country !== null) {
 switch (country.toLowerCase()) {
-    case "китай":
-        cost=100
-        console.log("Доставка в", country, "будет стоить", cost, "кредитов")
+    case "china":
+        console.log("Доставка в", country, "будет стоить", chinaPrice, "кредитов");
         break
 
-    case "чили":
-        cost=250
-        console.log("Доставка в", country, "будет стоить", cost, "кредитов")
+    case "chili":        
+        console.log("Доставка в", country, "будет стоить", chiliPrice, "кредитов");
         break
 
-    case "австралия":
-        cost=170
-        console.log("Доставка в", country, "будет стоить", cost, "кредитов")
+    case "australia":
+        console.log("Доставка в", country, "будет стоить", australiaPrice, "кредитов");
         break
 
-    case "индия":
-        cost=80
-        console.log("Доставка в", country, "будет стоить", cost, "кредитов")
+    case "india":
+        console.log("Доставка в", country, "будет стоить", indiaPrice, "кредитов");
         break
 
-    case "ямайка":
-        cost=120
-        console.log("Доставка в", country, "будет стоить", cost, "кредитов")
+    case "jamaika":
+        console.log("Доставка в", country, "будет стоить", jamaikaPrice, "кредитов");
         break
 
     default:
-        console.log("В вашей стране доставка не доступна")
+        console.log("В вашей стране доставка не доступна");
+}
 }
