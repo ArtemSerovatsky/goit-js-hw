@@ -12,6 +12,6 @@ if (howManyDroids == null) {
     if (totalPrice > credits) {
     console.log("недостаточно средств на счету");
     } else {
-    console.log ("Вы купили", howManyDroids, "дроидов, на счету осталось", credits - totalPrice, "кредитов");
+    console.log (`Вы купили ${howManyDroids}, дроидов, на счету осталось ${credits - totalPrice}, кредитов`);
 }
 }

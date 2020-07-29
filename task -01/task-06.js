@@ -8,10 +8,10 @@ do {
 
     if (Number.isNaN(Number(input))) {
         alert("Это не число, попробуйте еще раз");
-        break; 
+        continue; 
     }
     total += +input
     } while (input !== null);
 
 
-console.log ("всего", total)
+console.log (`всего ${total}`)

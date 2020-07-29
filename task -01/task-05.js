@@ -11,23 +11,23 @@ const country = prompt("в какую страну необходима дост
 if (country !== null) {
 switch (country.toLowerCase()) {
     case "china":
-        console.log("Доставка в", country, "будет стоить", chinaPrice, "кредитов");
+        console.log(`Доставка в ${country} будет стоить ${chinaPrice} кредитов`);
         break
 
     case "chili":        
-        console.log("Доставка в", country, "будет стоить", chiliPrice, "кредитов");
+    console.log(`Доставка в ${country} будет стоить ${chiliPrice} кредитов`);
         break
 
     case "australia":
-        console.log("Доставка в", country, "будет стоить", australiaPrice, "кредитов");
+        console.log(`Доставка в ${country} будет стоить ${australiaPrice} кредитов`);
         break
 
     case "india":
-        console.log("Доставка в", country, "будет стоить", indiaPrice, "кредитов");
+        console.log(`Доставка в ${country} будет стоить ${indiaPrice} кредитов`);
         break
 
     case "jamaika":
-        console.log("Доставка в", country, "будет стоить", jamaikaPrice, "кредитов");
+        console.log(`Доставка в ${country} будет стоить ${jamaikaPrice} кредитов`);
         break
 
     default:
